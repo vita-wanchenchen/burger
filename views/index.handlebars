@@ -1,0 +1,51 @@
+<h1>Eat-Da-Burger!</h1>
+
+<h2>Burgers Created!</h2>
+
+<ul>
+  {{#each cats}}
+    {{#unless devoured}}
+      {{> cats/cat-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Burgers Already Ate!</h2>
+
+<ul>
+  {{#each cats}}
+    {{#if devoured}}
+      {{> cats/cat-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="new-burger">Burger Name:</label>
+        <input type="text" id="new-burger" name="burger_name">
+    </div>
+
+    <button type="submit" id="submit">Make this Burger</button>
+</form>
+
+<script type="text/javascript">
+
+$("#submit").on("click", function(event) {
+   // Prevent default refresh setting 
+   event.preventDefault();
+
+   // Function to verify user answer all the questions
+   function validate() {
+    
+    // Verify user input for name and photo
+    if (!$("#new-burger").val()) {
+        return false;
+    }
+    return true;
+   }
+
+  // If new-burger entry is validated push it to database
+</script>
