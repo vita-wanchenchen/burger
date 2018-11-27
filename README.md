@@ -12,7 +12,7 @@ Burger build with HTML, CSS, Bootstrap, jQuery, Express.js with JavaScript packa
 
 ## How to use Friend Finder
 
-1. Go to  to start the app.
+1. Go to https://guarded-fortress-37941.herokuapp.com/ to start the app.
 
 2. At Burgers to Eat list Click on "Devour It!" button to eat the burger.
 
